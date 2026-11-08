@@ -504,7 +504,7 @@ $$('[data-contacts]').forEach(function (box) {
 
 /* categories */
 $('#cats').innerHTML = CATS.map(function (c, i) {
-  return '<button type="button" class="cat glass press a-pop" style="animation-delay:' + (0.1 + i * 0.07) + 's" data-cat="' + c.id + '"><span class="tile ' + (i % 2 ? 'sand' : 'blue') + '">' + ic(c.i, 30) + '</span><span class="lbl"><b data-en="' + c.en + '">' + c.ar + '</b><small>' + c.en + '</small></span></button>';
+  return '<button type="button" class="cat glass press a-pop" style="animation-delay:' + (0.1 + i * 0.07) + 's" data-cat="' + c.id + '"><span class="tile ' + (i % 2 ? 'sand' : 'blue') + '">' + ic(c.i, 30) + '</span><span class="lbl"><b data-en="' + c.en + '">' + c.ar + '</b></span></button>';
 }).join('');
 $('#typeSel').innerHTML = CATS.map(function (c) { return '<option value="' + c.opt + '">' + c.opt + '</option>'; }).join('');
 

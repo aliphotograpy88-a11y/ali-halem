@@ -1,5 +1,5 @@
 // يخلي الموقع يتثبت على الفون وينفتح بسرعة حتى لو النت ضعيف
-var CACHE = 'ah-v1';
+var CACHE = 'ah-v2';
 var FILES = ['./', './index.html', './manifest.webmanifest', './assets/gear.jpg', './assets/gear-bg.jpg', './assets/ali.jpg', './assets/icon-192.png', './assets/icon-512.png'];
 self.addEventListener('install', function (e) { e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); })); self.skipWaiting(); });
 self.addEventListener('activate', function (e) {
